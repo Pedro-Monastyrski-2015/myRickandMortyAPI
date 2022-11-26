@@ -1,0 +1,11 @@
+@font-face {
+    font-family:get_schwifty;
+    src: url('../../assets/font/get_schwifty.ttf');
+}
+
+
+.container{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
