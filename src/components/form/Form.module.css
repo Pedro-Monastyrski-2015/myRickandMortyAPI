@@ -1,0 +1,16 @@
+.formContainer{
+    border-radius: 1em;
+    background-color:rgb(195, 184, 184);
+    margin: 25% 35%;
+    width: 20em;
+    display: flex;
+    flex-direction: column;
+    border: 2px  solid blue;
+    padding: 1em;
+}
+.formLabel, .formInput{
+    
+    font-size:1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}

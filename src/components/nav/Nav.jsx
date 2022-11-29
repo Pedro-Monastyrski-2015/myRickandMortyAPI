@@ -6,10 +6,16 @@ import styles from  "./Nav.module.css";
 
 export default function Nav ({onSearch}){
     return (
-        <div>
+        <div className={styles.navBar}>
+            <div className={styles.navItems}>
             <Link to='/home'>Home</Link>
-            <Link to='/about'>About</Link>
+            </div>
+            <div className={styles.navItems}>
+                <Link to='/about'>About</Link>
+            </div>
+            <div className={styles.navItems}>
             <SearchBar onSearch={onSearch}/>
+            </div>
         </div>
     )
 }

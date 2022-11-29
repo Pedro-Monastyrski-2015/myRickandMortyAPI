@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { useParams, useNavigate} from "react-router-dom";
+import styles from './Detail.module.css'
 
 export default function Detail(){
     const { detailId } = useParams({})
@@ -27,16 +28,16 @@ export default function Detail(){
         navigate('/home')
      };
 
-    return <div>
+    return <div className={styles.detailCard}>
         <button onClick={handleClick}>Go Home</button>
         {character?(
                 <div>
                     <div>
                         <h1>{character.name}</h1>
-                        <h5>{character.status}</h5>
-                        <h5>{character.species}</h5>
-                        <h5>{character.gender}</h5>
-                        <h5>{character.origin?.name}</h5>
+                        <h3>{character.status}</h3>
+                        <h3>{character.species}</h3>
+                        <h3>{character.gender}</h3>
+                        <h3>{character.origin?.name}</h3>
                     </div>
                     <div>
                         <img src={character.image} alt={character.name} />
