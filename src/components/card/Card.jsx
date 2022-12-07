@@ -5,15 +5,15 @@ import { Link } from "react-router-dom"
 export default function Card(props) {
    return (
       <div className={styles.fatherCard}>
-         <div>
-         <button className={styles.cardButton} onClick={props.onClose}>X</button>
+         <div className={styles.cardButton}>
+         <button  onClick={props.onClose}>X</button>
          </div>
           
 
          <div className={styles.card}>
                <div className={styles.cardInfo}>
                   <Link to={`/detail/${props.id}`}>
-                     <h2>{props.name}</h2>
+                  <h2>{props.name}</h2>
                   </Link>
                   <h2>{props.species}</h2>
                   <h2>{props.gender}</h2>
