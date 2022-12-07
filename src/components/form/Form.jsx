@@ -2,9 +2,7 @@ import React from "react";
 import { validation } from "./validation";
 import styles from './Form.module.css'
 
-
-
-export default function Form (){
+export default function Form (props){
     const [userData,setUserData]= React.useState({
         username:'',
         password:''
@@ -26,8 +24,17 @@ export default function Form (){
                 [e.target.name]:e.target.value}))
     }
 
+    const handleSubmit = (e)=>{
+        e.preventDefault();
+        props.login(userData);/// esta es la linea que no funciona al parecer
+
+    }
+
+
+
+
     return (<div className={styles.formContainer}>
-        <form >
+        <form onSubmit={handleSubmit} >
             <label htmlFor="username" className={styles.formLabel}>Username:</label>
             <input
             className={styles.formInput}

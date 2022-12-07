@@ -51,7 +51,7 @@
     //transform-style: preserve-3d;
 */
 
-.cardImg,.cardInfo{
+.cardImg, .cardInfo{
     position:absolute;
     width: 98%;
     overflow:hidden;

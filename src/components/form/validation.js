@@ -17,9 +17,10 @@ else if(userData.username.length > 35 ){
 }
 
 if (!regexPassword.test(userData.password)) {
-    errors.password="La contraseña debe tener al menos un numero, una letra mayúscula y un caracter especial (#,*,_,etc)"
+    errors.password="La contraseña debe tener al menos un numero, una letra mayúscula y un caracter especial"
 }
-else if (userData.password.length < 8 || userData.password.length>15) {
+else if (userData.password.length < 8 && userData.password.length > 15) {
     errors.password="Password debe tener entre 8 y 15 caracteres"
 }
+return errors;
 }
