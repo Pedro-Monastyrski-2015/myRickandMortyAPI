@@ -9,13 +9,15 @@ export default function Nav ({onSearch}){
         <div className={styles.navBar}>
             <div className={styles.contItems}>
                 <div className={styles.navItems}>
-            <Link to='/home'>Home</Link>
+                    <Link to='/home'>Home</Link>
+                </div>
+                <div className={styles.navItems}>
+                <Link to='/about'>About</Link>
+                </div>
             </div>
-            <div className={styles.navItems}>
-            <Link to='/about'>About</Link>
-            </div>
-            </div>
-            
+        <div className={styles.logo}>
+           <img src={styles.img} alt="logo" />
+        </div>
 
             <div className={styles.navItems}>
             <SearchBar onSearch={onSearch}/>

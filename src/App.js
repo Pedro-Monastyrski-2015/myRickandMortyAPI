@@ -40,13 +40,14 @@ function onSearch(character) {
       setCharacters(characters.filter((char) => char.id !== id))
     }
 
-  //   useEffect(() => {
-  //     !access && navigate('/');
-  //  }, [access]);
+    useEffect(() => {
+      !access && navigate('/');
+   }, [access]);
 
 
   return (
-    <div className='App' style={{ padding: '25px' }}>
+    <div className='App' >
+      
       <div>
         {location.pathname !=='/' && <Nav onSearch={onSearch}/>}
       </div>
@@ -58,7 +59,18 @@ function onSearch(character) {
         <Route path='/detail/:detailId'  element={<Detail/>}/>
       </Routes>
       </div>
-      
+      <section>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </section>
     </div>)
 }
 

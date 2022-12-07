@@ -4,13 +4,21 @@ import styles from './About.module.css'
 export default function About (){
     return (
         <div className={styles.container}>
-            <h1>Bienvenidos a la Rick and Morty App</h1>
-            <h6>Creado por: Pedro Monastyrski</h6>
+            <h1>Bienvenidos a la Rick and Morty App</h1><br/>
+            <h3>Creado por: Pedro Monastyrski</h3>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, iste ut ipsa alias suscipit nesciunt maiores voluptatem architecto aspernatur ducimus molestias iure eveniet quos incidunt aut, amet nobis nostrum deserunt.
-
-
-                recordarmeterle firulete
+                Bienvenidos a la aplicacion de Rick and Morty.<br/>
+                Esta pequeña API fue creada con el proposito de 
+                solidificar y poner en práctica mis conocimientos de React <br/>
+                De a poco la voy mejorando pero espero que disfrutes su paso por aqui.
+                <br/>Saludos con mucho cariño.<br/>
+                <br/>
+                El creador.
             </p>
             
         </div>)

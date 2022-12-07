@@ -1,12 +1,13 @@
 .navBar{
     margin: 0;
-    background-color: cadetblue;
+    background-color:rgba(21, 152, 6, 0.779);
     height: 3em;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    
+    border:2px solid white;
+    border-radius: 5px;
 }
 .contItems{
     display: flex;
@@ -16,8 +17,15 @@
     text-decoration: none;
     display: inline-block;
     padding: 10px 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color:white;
 }
 
 .navItems a{
     text-decoration: none;
+}
+.logo{
+    background: url('../../assets/img/logoRyM.jpg');
+   
 }
